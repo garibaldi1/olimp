@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Страница Регистрации</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <H1>Регистрация спортсмена</H1>
+</header>
+<hr>
+<main>
+    <form method="post" action="config/add.php" autocomplete="off">
+        <input type = "text" name="name" placeholder="Введите имя" required ><br>
+        <input type = "text" name="suname" placeholder="Введите Фамилию" required><br>
+        <input type = "number" name = "weight" placeholder="Введите вес" required><br>
+        <input type = "text" name = "club" placeholder="Введите клуб" required><br>
+        <input type = "submit" name = "submit" value = "Зарегистрироваться">
+    </form>
+</main>
+</body>
+</html>

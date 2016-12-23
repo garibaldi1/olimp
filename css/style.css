@@ -1,0 +1,14 @@
+
+h1 {
+    text-align: center;
+}
+input {
+    margin: 1px;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+body {
+    text-align: center;
+}
