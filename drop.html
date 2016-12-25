@@ -5,25 +5,30 @@
     <title>Таблица</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="script/script.js" type="text/javascript"></script>
 </head>
 <body>
 <header>
     <h1>Турнирная сетка</h1>
 </header>
 <hr>
-<main>
+<main onload="drop();">
     <form action="config/show.php">
         <p>Выберите вес</p>
-        <select>
+        <select name="grad" onchange="drop();">
             <option value="t1">55 - 60 кг</option>
             <option value="t2">60 - 65 кг</option>
             <option value="t3">65 - 70 кг</option>
-            <option value="t4">75 - 80 кг</option>
-            <option value="t5">80 - 85 кг</option>
-            <option value="t6">85 - 90 кг</option>
-            <option value="t7">90 + кг</option>
+            <option value="t4">70 - 75 кг</option>
+            <option value="t5">75 - 80 кг</option>
+            <option value="t6">80 - 85 кг</option>
+            <option value="t7">85 - 90 кг</option>
+            <option value="t8">90 + кг</option>
         </select>
     </form>
+<div id = "ajax_reciver"></div>
+
 </main>
 </body>
 </html>
