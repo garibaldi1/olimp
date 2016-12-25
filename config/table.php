@@ -27,9 +27,10 @@ if ($data == t1){
     $query = "SELECT `suname` , `weight` , `club` FROM `table` WHERE weight > 90;";
     $send = mysqli_query($link,$query);
     while ($data = mysqli_fetch_array($send)){
-        echo $data['suname'], "<br>";
-        echo $data['weight'],"<br>";
-        echo $data['club'],"<br>";
+        $suname =  $data['suname'];
+        $weight =  $data['weight'];
+        $club =  $data['club'];
+        echo "<tr><td>$suname</td><td>$weight</td><td>$club</td></tr>";
     }
 }
 ?>
