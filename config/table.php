@@ -3,35 +3,134 @@ header('Content-type: text/html; charset=utf-8');
 require_once ("config.php");
 $data = $_POST['grad'];
 if ($data == t1){
+    echo "<h3>Весовая категория меньше 60 кг</h3>";
+    echo "<hr>";
     $query = "SELECT `suname` , `weight` , `club` FROM `table` WHERE weight < 60;";
-    $link = mysqli_query($link, $query);
+    $send = mysqli_query($link, $query);
+        while ($data = mysqli_fetch_array($send)){
+        $suname =  $data['suname'];
+        $weight =  $data['weight'];
+        $club =  $data['club'];
+        echo "<table border = 1px><thead><th>Фамилия</th><th>Клуб</th></thead><tbody><tr><td>$suname</td><td>$club</td></tr></tbody></table>";
+        $count++;
+        if ($count == 2){
+            echo "<br>";
+            $count = 0;
+        }
+    }
 }else if ($data == t2) {
-    $query = "SELECT `suname` , `weight` , `club` FROM `table` WHERE weight > 60 OR weight <= 65;";
+    echo "<h3>Весовая категория 60 - 65 кг</h3>";
+    echo "<hr>";
+    $query = "SELECT `suname` , `weight` , `club` FROM `table` WHERE weight > 60 AND weight <= 65;";
     $send = mysqli_query($link,$query);
+        while ($data = mysqli_fetch_array($send)){
+        $suname =  $data['suname'];
+        $weight =  $data['weight'];
+        $club =  $data['club'];
+        echo "<table border = 1px><thead><th>Фамилия</th><th>Клуб</th></thead><tbody><tr><td>$suname</td><td>$club</td></tr></tbody></table>";
+        $count++;
+        if ($count == 2){
+            echo "<br>";
+            $count = 0;
+        }
+    }
 }else if ($data == t3) {
-    $query = "SELECT `suname` , `weight` , `club` FROM `table` WHERE weight > 65 OR weight <= 70;";
+    echo "<h3>Весовая категория 65 - 70 кг</h3>";
+    echo "<hr>";
+    $query = "SELECT `suname` , `weight` , `club` FROM `table` WHERE weight > 65 AND weight <= 70;";
     $send = mysqli_query($link,$query);
+        while ($data = mysqli_fetch_array($send)){
+        $suname =  $data['suname'];
+        $weight =  $data['weight'];
+        $club =  $data['club'];
+        echo "<table border = 1px><thead><th>Фамилия</th><th>Клуб</th></thead><tbody><tr><td>$suname</td><td>$club</td></tr></tbody></table>";
+        $count++;
+        if ($count == 2){
+            echo "<br>";
+            $count = 0;
+        }
+    }
 }else if ($data == t4) {
-    $query = "SELECT `suname` , `weight` , `club` FROM `table` WHERE weight > 70 OR weight <= 75;";
+    echo "<h3>Весовая категория 70 - 75 кг</h3>";
+    echo "<hr>";
+    $query = "SELECT `suname` , `weight` , `club` FROM `table` WHERE weight > 70 AND weight <= 75;";
     $send = mysqli_query($link,$query);
+        while ($data = mysqli_fetch_array($send)){
+        $suname =  $data['suname'];
+        $weight =  $data['weight'];
+        $club =  $data['club'];
+        echo "<table border = 1px><thead><th>Фамилия</th><th>Клуб</th></thead><tbody><tr><td>$suname</td><td>$club</td></tr></tbody></table>";
+        $count++;
+        if ($count == 2){
+            echo "<br>";
+            $count = 0;
+        }
+    }
 }else if ($data == t5){
-    $query = "SELECT `suname` , `weight` , `club` FROM `table` WHERE weight > 75 OR weight <= 80;";
+    echo "<h3>Весовая категория 75 - 80 кг</h3>";
+    echo "<hr>";
+    $query = "SELECT `suname` , `weight` , `club` FROM `table` WHERE weight > 75 AND weight <= 80;";
     $send = mysqli_query($link,$query);
+        while ($data = mysqli_fetch_array($send)){
+        $suname =  $data['suname'];
+        $weight =  $data['weight'];
+        $club =  $data['club'];
+        echo "<table border = 1px><thead><th>Фамилия</th><th>Клуб</th></thead><tbody><tr><td>$suname</td><td>$club</td></tr></tbody></table>";
+        $count++;
+        if ($count == 2){
+            echo "<br>";
+            $count = 0;
+        }
+    }
 }else if ($data == t6) {
-    $query = "SELECT `suname` , `weight` , `club` FROM `table` WHERE weight > 80 OR weight <= 85;";
+    echo "<h3>Весовая категория 80 - 85 кг</h3>";
+    echo "<hr>";
+    $query = "SELECT `suname` , `weight` , `club` FROM `table` WHERE weight > 80 AND weight <= 85;";
     $send = mysqli_query($link,$query);
+    while ($data = mysqli_fetch_array($send)){
+        $suname =  $data['suname'];
+        $weight =  $data['weight'];
+        $club =  $data['club'];
+        echo "<table border = 1px><thead><th>Фамилия</th><th>Клуб</th></thead><tbody><tr><td>$suname</td><td>$club</td></tr></tbody></table>";
+        $count++;
+        if ($count == 2){
+            echo "<br>";
+            $count = 0;
+        }
+    }
 }else if ($data == t7) {
-    $query = "SELECT `suname` , `weight` , `club` FROM `table` WHERE weight > 85 OR weight <= 90;";
+    echo "<h3>Весовая категория 85 - 90 кг</h3>";
+    echo "<hr>";
+    $query = "SELECT `suname` , `weight` , `club` FROM `table` WHERE weight > 85 AND weight <= 90;";
     $send = mysqli_query($link,$query);
+    while ($data = mysqli_fetch_array($send)){
+        $suname =  $data['suname'];
+        $weight =  $data['weight'];
+        $club =  $data['club'];
+        echo "<table border = 1px><thead><th>Фамилия</th><th>Клуб</th></thead><tbody><tr><td>$suname</td><td>$club</td></tr></tbody></table>";
+        $count++;
+        if ($count == 2){
+            echo "<br>";
+            $count = 0;
+        }
+    }
 }else if ($data == t8) {
+    echo "<h3>Весовая категория 90+</h3>";
+    echo "<hr>";
     $query = "SELECT `suname` , `weight` , `club` FROM `table` WHERE weight > 90;";
     $send = mysqli_query($link,$query);
     while ($data = mysqli_fetch_array($send)){
         $suname =  $data['suname'];
         $weight =  $data['weight'];
         $club =  $data['club'];
-        echo "<tr><td>$suname</td><td>$weight</td><td>$club</td></tr>";
+        echo "<table border = 1px><thead><th>Фамилия</th><th>Клуб</th></thead><tbody><tr><td>$suname</td><td>$club</td></tr></tbody></table>";
+        $count++;
+        if ($count == 2){
+            echo "<br>";
+            $count = 0;
+        }
     }
+    
 }
 ?>
 
