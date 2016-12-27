@@ -12,6 +12,7 @@ if ($data == t1){
         $weight =  $data['weight'];
         $club =  $data['club'];
         echo "<table border = 1px><thead><th>Фамилия</th><th>Клуб</th></thead><tbody><tr><td>$suname</td><td>$club</td></tr></tbody></table>";
+        echo "<form style = 'text-align: left;'><input type = 'checkbox' value = '1'><input type = 'checkbox' value = '1'><input type = 'checkbox' value = '1'></form>";
         $count++;
         if ($count == 2){
             echo "<br>";
@@ -28,6 +29,7 @@ if ($data == t1){
         $weight =  $data['weight'];
         $club =  $data['club'];
         echo "<table border = 1px><thead><th>Фамилия</th><th>Клуб</th></thead><tbody><tr><td>$suname</td><td>$club</td></tr></tbody></table>";
+        echo "<form style = 'text-align: left;'><input type = 'checkbox' value = '1'><input type = 'checkbox' value = '1'><input type = 'checkbox' value = '1'></form>";
         $count++;
         if ($count == 2){
             echo "<br>";
@@ -44,6 +46,7 @@ if ($data == t1){
         $weight =  $data['weight'];
         $club =  $data['club'];
         echo "<table border = 1px><thead><th>Фамилия</th><th>Клуб</th></thead><tbody><tr><td>$suname</td><td>$club</td></tr></tbody></table>";
+        echo "<form style = 'text-align: left;'><input type = 'checkbox' value = '1'><input type = 'checkbox' value = '1'><input type = 'checkbox' value = '1'></form>";
         $count++;
         if ($count == 2){
             echo "<br>";
@@ -60,6 +63,7 @@ if ($data == t1){
         $weight =  $data['weight'];
         $club =  $data['club'];
         echo "<table border = 1px><thead><th>Фамилия</th><th>Клуб</th></thead><tbody><tr><td>$suname</td><td>$club</td></tr></tbody></table>";
+        echo "<form style = 'text-align: left;'><input type = 'checkbox' value = '1'><input type = 'checkbox' value = '1'><input type = 'checkbox' value = '1'></form>";
         $count++;
         if ($count == 2){
             echo "<br>";
@@ -76,6 +80,7 @@ if ($data == t1){
         $weight =  $data['weight'];
         $club =  $data['club'];
         echo "<table border = 1px><thead><th>Фамилия</th><th>Клуб</th></thead><tbody><tr><td>$suname</td><td>$club</td></tr></tbody></table>";
+        echo "<form style = 'text-align: left;'><input type = 'checkbox' value = '1'><input type = 'checkbox' value = '1'><input type = 'checkbox' value = '1'></form>";
         $count++;
         if ($count == 2){
             echo "<br>";
@@ -92,6 +97,7 @@ if ($data == t1){
         $weight =  $data['weight'];
         $club =  $data['club'];
         echo "<table border = 1px><thead><th>Фамилия</th><th>Клуб</th></thead><tbody><tr><td>$suname</td><td>$club</td></tr></tbody></table>";
+        echo "<form style = 'text-align: left;'><input type = 'checkbox' value = '1'><input type = 'checkbox' value = '1'><input type = 'checkbox' value = '1'></form>";
         $count++;
         if ($count == 2){
             echo "<br>";
@@ -108,6 +114,7 @@ if ($data == t1){
         $weight =  $data['weight'];
         $club =  $data['club'];
         echo "<table border = 1px><thead><th>Фамилия</th><th>Клуб</th></thead><tbody><tr><td>$suname</td><td>$club</td></tr></tbody></table>";
+        echo "<form style = 'text-align: left;'><input type = 'checkbox' value = '1'><input type = 'checkbox' value = '1'><input type = 'checkbox' value = '1'></form>";
         $count++;
         if ($count == 2){
             echo "<br>";
@@ -124,6 +131,7 @@ if ($data == t1){
         $weight =  $data['weight'];
         $club =  $data['club'];
         echo "<table border = 1px><thead><th>Фамилия</th><th>Клуб</th></thead><tbody><tr><td>$suname</td><td>$club</td></tr></tbody></table>";
+        echo "<form style = 'text-align: left;'><input type = 'checkbox' value = '1'><input type = 'checkbox' value = '1'><input type = 'checkbox' value = '1'></form>";
         $count++;
         if ($count == 2){
             echo "<br>";

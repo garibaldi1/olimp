@@ -1,4 +1,4 @@
-﻿function drop(){
+function drop(){
 var page = $('select[name ="grad"]').val();
     $.ajax({
         type: "POST",
