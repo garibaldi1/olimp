@@ -9,3 +9,10 @@ var page = $('select[name ="grad"]').val();
         }
     })
  }
+ 
+ function chick(){
+     var page = $("input:checkbox").val();
+     page = parseInt(page);
+     page = page;
+     alert (page);
+ }
