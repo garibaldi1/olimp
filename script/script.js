@@ -1,3 +1,4 @@
+'use strict';
 function drop(){
 var page = $('select[name ="grad"]').val();
     $.ajax({
@@ -11,8 +12,7 @@ var page = $('select[name ="grad"]').val();
  }
  
  function chick(){
-     var page = $("input:checkbox").val();
-     page = parseInt(page);
-     page = page;
-     alert (page);
+     if($('input[type=checkbox]:checked').length >= 2){
+         alert("победил");
+     }
  }
