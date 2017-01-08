@@ -11,8 +11,20 @@ var page = $('select[name ="grad"]').val();
     })
  }
  
- function chick(){
-     if($('input[type=checkbox]:checked').length >= 2){
-         alert("победил");
-     }
- }
+// function chick(){
+//     if($('input[type=checkbox]:checked').length >= 2){
+//         alert("победил");
+//     }
+// }
+ 
+var f = function(){
+    while($('input[type=checkbox]:checked').length >= 2){
+    this.x = true;
+    alert(x);
+    break;
+}
+    (function(){
+        //this.x = $('input[type=checkbox]:checked').lenght;
+    })();
+};
+ 

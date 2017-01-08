@@ -124,17 +124,19 @@ if ($data == t1){
 }else if ($data == t8) {
     echo "<h3>Весовая категория 90+</h3>";
     echo "<hr>";
-    $query = "SELECT `suname` , `weight` , `club` FROM `table` WHERE weight > 90;";
+    $query = "SELECT `suname` , `weight` , `club`,`id` FROM `table` WHERE weight > 90;";
     $send = mysqli_query($link,$query);
     while ($data = mysqli_fetch_array($send)){
+        $id = $data['id'];
         $suname =  $data['suname'];
         $weight =  $data['weight'];
         $club =  $data['club'];
         echo "<table border = 1px><thead><th>Фамилия</th><th>Клуб</th></thead><tbody><tr><td>$suname</td><td>$club</td></tr></tbody></table>";
-        echo "<form style = 'text-align: left;' name = 'check' onchange = 'chick();'><input type = 'checkbox' value = '1'><input type = 'checkbox' value = '1'><input type = 'checkbox' value = '1'></form>";
+        echo "<form style = 'text-align: left;' name = 'check' onchange = 'this.name = name;'><input type = 'checkbox' value = '$id' name='hand' onclick = 'f();'><input type = 'checkbox' name='khife' value = '$id'><input type = 'checkbox' name='shoot' value = '$id'></form>";
         $count++;
         if ($count == 2){
             echo "<br>";
+            echo "<hr>";
             $count = 0;
         }
     }
