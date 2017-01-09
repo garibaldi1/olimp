@@ -131,8 +131,8 @@ if ($data == t1){
         $suname =  $data['suname'];
         $weight =  $data['weight'];
         $club =  $data['club'];
-        echo "<table border = 1px name = '$id'><thead><th>Фамилия</th><th>Клуб</th></thead><tbody><tr><td>$suname</td><td>$club</td></tr></tbody></table>";
-        echo "<form style = 'text-align: left;' name = 'check'><input type = 'checkbox' name='hand' onclick = 'f();'><input type = 'checkbox' name='khife'><input type = 'checkbox' name='shoot'></form>";
+        echo "<table border = 1px name = '$id'><thead><th>Фамилия</th><th>Клуб</th></thead><tbody><tr><td>$suname</td><td>$club</td></tr><tr><td><form style = 'text-align: left;' name = 'check' id = '$id'><input type = 'checkbox' name='hand' onclick = 'f();'><input type = 'checkbox' name='khife'><input type = 'checkbox' name='shoot'></form></td></tr></tbody></table>";
+        //echo "<form style = 'text-align: left;' name = 'check'><input type = 'checkbox' name='hand' onclick = 'f();'><input type = 'checkbox' name='khife'><input type = 'checkbox' name='shoot'></form>";
         $count++;
         if ($count == 2){
             echo "<br>";
