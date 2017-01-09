@@ -11,20 +11,17 @@ var page = $('select[name ="grad"]').val();
     })
  }
  
-// function chick(){
-//     if($('input[type=checkbox]:checked').length >= 2){
-//         alert("победил");
-//     }
-// }
+
  
-var f = function(){
-    while($('input[type=checkbox]:checked').length >= 2){
-    this.x = true;
-    alert(x);
-    break;
-}
-    (function(){
-        //this.x = $('input[type=checkbox]:checked').lenght;
-    })();
+var f = function(event){
+
+    
+    var target = event.target;
+    var id = target.getAttribute("id");
+    if ( !id ) return;
+    
+    var array = id.split('-');
+    if (array.length != 3) return;
+    console.log('table: ' + array[1] + " checkbox: " + array[2]);
 };
  
